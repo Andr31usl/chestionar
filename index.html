@@ -304,6 +304,14 @@
     overflow: hidden;
   }
   .about-image span { font-size: 90px; display: block; margin-bottom: 12px; }
+  .about-image img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+  }
 
   .about-image-badge {
     position: absolute;
@@ -318,6 +326,7 @@
     font-weight: 700;
     font-size: 14px;
     text-align: left;
+    z-index: 2;
   }
 
   .about-text .section-tag { margin-bottom: 18px; }
@@ -378,6 +387,15 @@
     justify-content: center;
     font-size: 64px;
     position: relative;
+    overflow: hidden;
+  }
+  .product-image img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
   }
   .product-price-tag {
     position: absolute;
@@ -389,6 +407,7 @@
     font-weight: 700;
     padding: 6px 14px;
     border-radius: 999px;
+    z-index: 2;
   }
 
   .product-body { padding: 24px; }
@@ -809,6 +828,7 @@
         <span>&#127800;</span>
         [Poza florarie / echipa]
       </div>
+      <img src="https://images.unsplash.com/photo-1487070183336-b863922373d4?auto=format&fit=crop&w=800&q=80" alt="Interiorul florariei, aranjamente florale expuse" loading="lazy" onerror="this.style.display='none'">
       <div class="about-image-badge">10+ ani de experienta in aranjamente florale</div>
     </div>
     <div class="about-text fade-in">
@@ -820,6 +840,7 @@
         <li><span class="check">&#10003;</span> Flori proaspete, aduse zilnic</li>
         <li><span class="check">&#10003;</span> Aranjamente create manual, personalizate</li>
         <li><span class="check">&#10003;</span> Livrare rapida in toata Buzau</li>
+        <li><span class="check">&#10003;</span> Consultanta gratuita pentru nunti si evenimente</li>
       </ul>
     </div>
   </div>
@@ -837,7 +858,7 @@
     <div class="products-grid">
 
       <div class="product-card fade-in">
-        <div class="product-image">&#128144;<span class="product-price-tag">de la 150 lei</span></div>
+        <div class="product-image">&#128144;<img src="https://images.unsplash.com/photo-1523694576729-c3af0e627e70?auto=format&fit=crop&w=600&q=80" alt="Buchet de trandafiri rosii" loading="lazy" onerror="this.style.display='none'"><span class="product-price-tag">de la 150 lei</span></div>
         <div class="product-body">
           <h3>Buchet Trandafiri Rosii</h3>
           <p>Buchet clasic din trandafiri rosii proaspeti, ideal pentru declaratii de dragoste.</p>
@@ -849,7 +870,7 @@
       </div>
 
       <div class="product-card fade-in">
-        <div class="product-image">&#127799;<span class="product-price-tag">de la 180 lei</span></div>
+        <div class="product-image">&#127799;<img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=600&q=80" alt="Aranjament cu bujori roz" loading="lazy" onerror="this.style.display='none'"><span class="product-price-tag">de la 180 lei</span></div>
         <div class="product-body">
           <h3>Aranjament Bujori Roz</h3>
           <p>Bujori delicati in nuante de roz, aranjati intr-o cutie eleganta.</p>
@@ -861,7 +882,7 @@
       </div>
 
       <div class="product-card fade-in">
-        <div class="product-image">&#127811;<span class="product-price-tag">de la 130 lei</span></div>
+        <div class="product-image">&#127811;<img src="https://images.unsplash.com/photo-1516614930580-40216a5ae76c?auto=format&fit=crop&w=600&q=80" alt="Cos cu flori de sezon" loading="lazy" onerror="this.style.display='none'"><span class="product-price-tag">de la 130 lei</span></div>
         <div class="product-body">
           <h3>Cos cu Flori de Sezon</h3>
           <p>Cos plin cu flori proaspete de sezon, potrivit pentru orice ocazie.</p>
@@ -873,7 +894,7 @@
       </div>
 
       <div class="product-card fade-in">
-        <div class="product-image">&#128140;<span class="product-price-tag">de la 350 lei</span></div>
+        <div class="product-image">&#128140;<img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=600&q=80" alt="Buchet de mireasa elegant" loading="lazy" onerror="this.style.display='none'"><span class="product-price-tag">de la 350 lei</span></div>
         <div class="product-body">
           <h3>Buchet Mireasa Eleganta</h3>
           <p>Buchet rafinat pentru mireasa, personalizat dupa tema nuntii tale.</p>
@@ -885,7 +906,7 @@
       </div>
 
       <div class="product-card fade-in">
-        <div class="product-image">&#127794;<span class="product-price-tag">de la 200 lei</span></div>
+        <div class="product-image">&#127794;<img src="https://images.unsplash.com/photo-1508610048659-a06b669e3321?auto=format&fit=crop&w=600&q=80" alt="Aranjament funerar elegant cu flori albe" loading="lazy" onerror="this.style.display='none'"><span class="product-price-tag">de la 200 lei</span></div>
         <div class="product-body">
           <h3>Aranjament Funerar Elegant</h3>
           <p>Aranjament discret si elegant, realizat cu respect pentru momentele dificile.</p>
@@ -897,7 +918,7 @@
       </div>
 
       <div class="product-card fade-in">
-        <div class="product-image">&#127801;<span class="product-price-tag">de la 250 lei</span></div>
+        <div class="product-image">&#127801;<img src="https://images.unsplash.com/photo-1502977249166-824b3a8a4d6d?auto=format&fit=crop&w=600&q=80" alt="Cutie cadou cu flori premium" loading="lazy" onerror="this.style.display='none'"><span class="product-price-tag">de la 250 lei</span></div>
         <div class="product-body">
           <h3>Cutie Flori Premium</h3>
           <p>Flori mixte, aranjate intr-o cutie cadou, gata pentru orice surpriza.</p>
@@ -1031,6 +1052,10 @@
           <div class="contact-info-item">
             <div class="contact-icon">&#9993;</div>
             <div><strong>Email</strong><span>[contact@floraria.ro]</span></div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-icon">&#128337;</div>
+            <div><strong>Program</strong><span>L-V 09:00-19:00 &bull; S 09:00-15:00 &bull; D inchis</span></div>
           </div>
         </div>
 
