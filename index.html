@@ -304,14 +304,14 @@
     overflow: hidden;
   }
   .about-image span { font-size: 90px; display: block; margin-bottom: 12px; }
-  .about-image img {
+  .flower-art {
     position: absolute;
     inset: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
     z-index: 1;
   }
+  .flower-art svg { width: 100%; height: 100%; display: block; }
 
   .about-image-badge {
     position: absolute;
@@ -388,14 +388,6 @@
     font-size: 64px;
     position: relative;
     overflow: hidden;
-  }
-  .product-image img {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 1;
   }
   .product-price-tag {
     position: absolute;
@@ -824,11 +816,7 @@
 <section id="despre">
   <div class="container about">
     <div class="about-image fade-in">
-      <div>
-        <span>&#127800;</span>
-        [Poza florarie / echipa]
-      </div>
-      <img src="https://images.unsplash.com/photo-1487070183336-b863922373d4?auto=format&fit=crop&w=800&q=80" alt="Interiorul florariei, aranjamente florale expuse" loading="lazy" onerror="this.style.display='none'">
+      <div class="flower-art" data-variant="bouquet" data-blooms="#F9A8D4,#FFFFFF,#F472B6,#FBCFE8,#F9A8D4" data-wrap="#166534" data-big="1" role="img" aria-label="Ilustratie buchet de flori"></div>
       <div class="about-image-badge">10+ ani de experienta in aranjamente florale</div>
     </div>
     <div class="about-text fade-in">
@@ -858,7 +846,7 @@
     <div class="products-grid">
 
       <div class="product-card fade-in">
-        <div class="product-image">&#128144;<img src="https://images.unsplash.com/photo-1523694576729-c3af0e627e70?auto=format&fit=crop&w=600&q=80" alt="Buchet de trandafiri rosii" loading="lazy" onerror="this.style.display='none'"><span class="product-price-tag">de la 150 lei</span></div>
+        <div class="product-image"><div class="flower-art" data-variant="bouquet" data-blooms="#DB2777,#F9A8D4,#DB2777" data-wrap="#166534" role="img" aria-label="Buchet de trandafiri rosii"></div><span class="product-price-tag">de la 150 lei</span></div>
         <div class="product-body">
           <h3>Buchet Trandafiri Rosii</h3>
           <p>Buchet clasic din trandafiri rosii proaspeti, ideal pentru declaratii de dragoste.</p>
@@ -870,7 +858,7 @@
       </div>
 
       <div class="product-card fade-in">
-        <div class="product-image">&#127799;<img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=600&q=80" alt="Aranjament cu bujori roz" loading="lazy" onerror="this.style.display='none'"><span class="product-price-tag">de la 180 lei</span></div>
+        <div class="product-image"><div class="flower-art" data-variant="bouquet" data-blooms="#F9A8D4,#FBCFE8,#F9A8D4" data-wrap="#166534" role="img" aria-label="Aranjament cu bujori roz"></div><span class="product-price-tag">de la 180 lei</span></div>
         <div class="product-body">
           <h3>Aranjament Bujori Roz</h3>
           <p>Bujori delicati in nuante de roz, aranjati intr-o cutie eleganta.</p>
@@ -882,7 +870,7 @@
       </div>
 
       <div class="product-card fade-in">
-        <div class="product-image">&#127811;<img src="https://images.unsplash.com/photo-1516614930580-40216a5ae76c?auto=format&fit=crop&w=600&q=80" alt="Cos cu flori de sezon" loading="lazy" onerror="this.style.display='none'"><span class="product-price-tag">de la 130 lei</span></div>
+        <div class="product-image"><div class="flower-art" data-variant="basket" data-blooms="#F9A8D4,#FFFFFF,#FBCFE8" data-wrap="#166534" role="img" aria-label="Cos cu flori de sezon"></div><span class="product-price-tag">de la 130 lei</span></div>
         <div class="product-body">
           <h3>Cos cu Flori de Sezon</h3>
           <p>Cos plin cu flori proaspete de sezon, potrivit pentru orice ocazie.</p>
@@ -894,7 +882,7 @@
       </div>
 
       <div class="product-card fade-in">
-        <div class="product-image">&#128140;<img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=600&q=80" alt="Buchet de mireasa elegant" loading="lazy" onerror="this.style.display='none'"><span class="product-price-tag">de la 350 lei</span></div>
+        <div class="product-image"><div class="flower-art" data-variant="bouquet" data-blooms="#FFFFFF,#FCE7F3,#FFFFFF" data-wrap="#F9A8D4" role="img" aria-label="Buchet de mireasa elegant"></div><span class="product-price-tag">de la 350 lei</span></div>
         <div class="product-body">
           <h3>Buchet Mireasa Eleganta</h3>
           <p>Buchet rafinat pentru mireasa, personalizat dupa tema nuntii tale.</p>
@@ -906,7 +894,7 @@
       </div>
 
       <div class="product-card fade-in">
-        <div class="product-image">&#127794;<img src="https://images.unsplash.com/photo-1508610048659-a06b669e3321?auto=format&fit=crop&w=600&q=80" alt="Aranjament funerar elegant cu flori albe" loading="lazy" onerror="this.style.display='none'"><span class="product-price-tag">de la 200 lei</span></div>
+        <div class="product-image"><div class="flower-art" data-variant="wreath" data-blooms="#FFFFFF,#FFFFFF,#FFFFFF,#FCE7F3,#FFFFFF,#FFFFFF" data-wrap="#166534" role="img" aria-label="Aranjament funerar elegant cu flori albe"></div><span class="product-price-tag">de la 200 lei</span></div>
         <div class="product-body">
           <h3>Aranjament Funerar Elegant</h3>
           <p>Aranjament discret si elegant, realizat cu respect pentru momentele dificile.</p>
@@ -918,7 +906,7 @@
       </div>
 
       <div class="product-card fade-in">
-        <div class="product-image">&#127801;<img src="https://images.unsplash.com/photo-1502977249166-824b3a8a4d6d?auto=format&fit=crop&w=600&q=80" alt="Cutie cadou cu flori premium" loading="lazy" onerror="this.style.display='none'"><span class="product-price-tag">de la 250 lei</span></div>
+        <div class="product-image"><div class="flower-art" data-variant="box" data-blooms="#F9A8D4,#FFFFFF,#FBCFE8" data-wrap="#F9A8D4" role="img" aria-label="Cutie cadou cu flori premium"></div><span class="product-price-tag">de la 250 lei</span></div>
         <div class="product-body">
           <h3>Cutie Flori Premium</h3>
           <p>Flori mixte, aranjate intr-o cutie cadou, gata pentru orice surpriza.</p>
@@ -1153,6 +1141,84 @@
 </a>
 
 <script>
+  // ---------- ILUSTRATII FLORI (SVG generat, fara dependinte externe) ----------
+  function buildFlowerSVG(el) {
+    const variant = el.dataset.variant || 'bouquet';
+    const wrap = el.dataset.wrap || '#166534';
+    const blooms = (el.dataset.blooms || '#F9A8D4,#FBCFE8,#F9A8D4').split(',');
+    const big = el.dataset.big === '1';
+    const w = 240, h = big ? 300 : 240;
+    const baseY = h * 0.6;
+    let shapes = '';
+
+    const bouquetPositions = [
+      { x: w * 0.5, y: h * 0.24, r: w * 0.115 },
+      { x: w * 0.32, y: h * 0.36, r: w * 0.1 },
+      { x: w * 0.68, y: h * 0.36, r: w * 0.1 },
+      { x: w * 0.42, y: h * 0.46, r: w * 0.09 },
+      { x: w * 0.58, y: h * 0.46, r: w * 0.09 },
+      { x: w * 0.5, y: h * 0.4, r: w * 0.08 },
+    ];
+
+    function bloom(x, y, r, color) {
+      return `
+        <circle cx="${x}" cy="${y}" r="${r}" fill="${color}" opacity="0.95"/>
+        <circle cx="${x}" cy="${y}" r="${r * 0.4}" fill="#166534" opacity="0.18"/>
+      `;
+    }
+
+    function leaf(x1, y1, x2, y2) {
+      return `<path d="M ${x1} ${y1} Q ${(x1 + x2) / 2} ${(y1 + y2) / 2 - 14} ${x2} ${y2}" stroke="${wrap}" stroke-width="5" fill="none" stroke-linecap="round" opacity="0.55"/>`;
+    }
+
+    if (variant === 'wreath') {
+      const cx = w / 2, cy = baseY, ringR = w * 0.3;
+      shapes += `<circle cx="${cx}" cy="${cy}" r="${ringR}" fill="none" stroke="${wrap}" stroke-width="${w * 0.09}" opacity="0.9"/>`;
+      blooms.forEach((color, i) => {
+        const angle = (i / blooms.length) * Math.PI * 2 - Math.PI / 2;
+        const x = cx + Math.cos(angle) * ringR;
+        const y = cy + Math.sin(angle) * ringR;
+        shapes += bloom(x, y, w * 0.075, color);
+      });
+    } else if (variant === 'box') {
+      const bx = w * 0.24, by = h * 0.58, bw = w * 0.52, bh = h * 0.28;
+      shapes += `<rect x="${bx}" y="${by}" width="${bw}" height="${bh}" rx="8" fill="${wrap}"/>`;
+      shapes += `<rect x="${bx}" y="${by}" width="${bw}" height="${bh * 0.28}" rx="8" fill="#ffffff" opacity="0.25"/>`;
+      shapes += `<rect x="${w / 2 - bw * 0.07}" y="${by}" width="${bw * 0.14}" height="${bh}" fill="#ffffff" opacity="0.35"/>`;
+      blooms.forEach((color, i) => {
+        const p = bouquetPositions[i % bouquetPositions.length];
+        shapes += leaf(w / 2, by, p.x, p.y + p.r * 0.6);
+      });
+      blooms.forEach((color, i) => {
+        const p = bouquetPositions[i % bouquetPositions.length];
+        shapes += bloom(p.x, p.y, p.r, color);
+      });
+    } else if (variant === 'basket') {
+      const bx = w * 0.22, by = h * 0.6, bw = w * 0.56, bh = h * 0.3;
+      shapes += `<path d="M ${bx} ${by} L ${bx + bw} ${by} L ${bx + bw * 0.85} ${by + bh} L ${bx + bw * 0.15} ${by + bh} Z" fill="${wrap}" opacity="0.9"/>`;
+      shapes += `<path d="M ${bx + bw * 0.18} ${by} Q ${w / 2} ${by - h * 0.16} ${bx + bw * 0.82} ${by}" stroke="${wrap}" stroke-width="6" fill="none" stroke-linecap="round"/>`;
+      blooms.forEach((color, i) => {
+        const p = bouquetPositions[i % bouquetPositions.length];
+        shapes += bloom(p.x, p.y, p.r, color);
+      });
+    } else {
+      const cx = w / 2;
+      shapes += `<path d="M ${w * 0.3} ${baseY} L ${w * 0.7} ${baseY} L ${w * 0.8} ${h * 0.94} L ${w * 0.2} ${h * 0.94} Z" fill="${wrap}"/>`;
+      blooms.forEach((color, i) => {
+        const p = bouquetPositions[i % bouquetPositions.length];
+        shapes += leaf(cx, baseY, p.x, p.y + p.r * 0.6);
+      });
+      blooms.forEach((color, i) => {
+        const p = bouquetPositions[i % bouquetPositions.length];
+        shapes += bloom(p.x, p.y, p.r, color);
+      });
+    }
+
+    el.innerHTML = `<svg viewBox="0 0 ${w} ${h}" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">${shapes}</svg>`;
+  }
+
+  document.querySelectorAll('.flower-art').forEach(buildFlowerSVG);
+
   // ---------- HAMBURGER MENU ----------
   const hamburger = document.getElementById('hamburger');
   const navLinks = document.getElementById('navLinks');
